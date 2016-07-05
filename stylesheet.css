@@ -1,0 +1,93 @@
+
+
+body{
+	height:100%;
+	max-width:100%;
+}
+
+.movieSearch{
+	position:fixed;
+	left:0;
+	top:0;
+	height:75px;
+	width:175px;
+	background-color:#D63131;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+input{
+    border: 0px solid #000000;
+    border-bottom-width: 2px;
+    background-color: transparent;
+    color:white;
+}
+
+
+.navContent{
+	position:fixed;
+	top:75px;
+	left:0;
+	bottom:0;
+	display:flex;
+	flex-direction:column;
+	width:175px;
+	background-color:black;
+}
+
+.navContent__sectionTitle{
+	color:#655E5E;
+	padding-left:7px;
+	margin-top:7px;
+}
+
+.navigation__link{
+	color:white;
+}
+
+.navigation__icon{
+	float:left;
+	margin:5px;
+	padding-left:11px;
+}
+
+.mainContent{
+	position: relative;
+	left:175px;
+	right:200px;
+	top:75px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+
+}
+
+.movie{
+	font-family: Arial;
+	font-size:12px;
+	margin:10px;
+	margin-top:0px;
+}
+
+.movie__title{
+	font-weight: bold;
+}
+
+.chatContent{
+	position:fixed;
+	top:75px;
+	right:0px;
+	bottom:0px;
+	display:flex;
+	flex-direction:column;
+	width:180px;
+	background-color: #E3E3E3;
+}
+
+.chat__userPicture{
+	float: left;
+	padding-left:10px;
+	margin:5px;
+	border-radius:50%;
+}

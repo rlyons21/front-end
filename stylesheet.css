@@ -1,16 +1,21 @@
 
 
 body{
-	height:100%;
-	max-width:100%;
+	padding:0;
+	margin:0;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.left{
+	order: 1;
+	width:20%;
+	min-height: 100vh;
 }
 
 .movieSearch{
-	position:fixed;
-	left:0;
-	top:0;
 	height:75px;
-	width:175px;
+	width:100%;
 	background-color:#D63131;
 	display:flex;
 	align-items:center;
@@ -21,48 +26,84 @@ input{
     border: 0px solid #000000;
     border-bottom-width: 2px;
     background-color: transparent;
-    color:white;
+    color:black;
 }
 
 
 .navContent{
-	position:fixed;
-	top:75px;
-	left:0;
-	bottom:0;
 	display:flex;
 	flex-direction:column;
-	width:175px;
+	width:100%;
+	height:100%;
 	background-color:black;
 }
+.navLinks{
+	list-style:none;
+	padding:10px;
+}
 
-.navContent__sectionTitle{
+.sectionTitle{
 	color:#655E5E;
-	padding-left:7px;
+	margin-left:30px;
 	margin-top:7px;
 }
 
+.navigation{
+	padding-bottom:5px;
+}
+
 .navigation__link{
+	margin:5px;
 	color:white;
 }
 
 .navigation__icon{
 	float:left;
-	margin:5px;
 	padding-left:11px;
+	margin-right:6px;
 }
 
 .mainContent{
-	position: relative;
-	left:175px;
-	right:200px;
-	top:75px;
+	order:2;
+	width:58%;
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-
+	justify-content:center;
 }
 
+.header{
+	display:flex;
+	width:100%;
+	flex-flow:space-between;
+}
+
+.pageTitle{
+	font-family: Helvetica,Arial;
+	font-size: 22px;
+}
+
+.sortLinksContainer{
+	display:flex;
+	align-items:center;
+}
+
+.sortLinks{
+	list-style:none;
+	display:flex;
+}
+.sortLinks__item{
+	padding-right:5px;
+}
+
+.icons{
+	display:flex;
+	float:right;
+}
+.refreshIcon{
+	height:20px;
+	width:20px;
+}
 .movie{
 	font-family: Arial;
 	font-size:12px;
@@ -74,14 +115,17 @@ input{
 	font-weight: bold;
 }
 
+.right{
+	width:22%;
+	order:3;
+	min-height:100vh;
+}
+
 .chatContent{
-	position:fixed;
-	top:75px;
-	right:0px;
-	bottom:0px;
 	display:flex;
 	flex-direction:column;
-	width:180px;
+	width:100%;
+	height:89%;
 	background-color: #E3E3E3;
 }
 
@@ -89,5 +133,25 @@ input{
 	float: left;
 	padding-left:10px;
 	margin:5px;
-	border-radius:50%;
+	border-radius:80%;
+}
+
+.chat__userName{
+	margin-top:10px;
+}
+
+.user{
+	background-color:#62BFC2;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:75px;
+}
+
+.chatSearch{
+	background-color:#C8D2D2;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:75px;
 }

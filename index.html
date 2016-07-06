@@ -6,202 +6,255 @@
 		<link type = "text/css" rel = "stylesheet" href="stylesheet.css">
 	</head>
 
-<body>
-	<div class="movieSearch">
-			<form class="movieSearch__search">
-				<input type="text" name="search" placeholder="Search Movies">
+<body class="main">
+	<div class="left">
+		<div class="movieSearch">
+				<form class="movieSearch__search">
+					<input type="image" src="search-icon.png" name="search" placeholder="Search Movies">
+				</form>
+		</div>
+
+		<div class = "navContent">
+
+			<div class="sectionTitle">Main</div>
+			<ul class="navLinks">
+				 <li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>Playing</div>
+				</li>
+
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>Discover</div>
+				</li>
+
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>Activity</div>
+				</li>
+
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>Top Charts</div>
+				</li>
+
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>New Releases</div>
+				</li>
+			</ul>
+			
+
+			<div class="sectionTitle">Your Movie Circles</div>
+			
+			<ul class="navLinks">
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>This I Must See</div>
+				</li>
+
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>The Best</div>
+				</li>
+			</ul>
+
+
+			<div class="sectionTitle">Collections</div>
+			
+			<ul class="navLinks">
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>Me and Bob</div>
+				</li>
+
+				<li class=navigation>
+					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
+					<div class= navigation__link>Travel Movies</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+
+	<div class = "mainContent">
+		<div class="header">
+			<p class="pageTitle"> Discover</p>
+
+
+			<div class="sortLinksContainer"> <ul class="sortLinks">
+				<li class="sortLinks__item">Release Date</li>
+				<li class="sortLinks__item"> | </li>
+				<li class="sortLinks__item">Popularity</li>
+			</ul></div>
+
+			<div class=icons>
+				<img src="refresh.png" class="refreshIcon"/>
+			</div>
+
+		</div>
+
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">The Great Gatsby</div>
+			<div class="movie__genre">Drama, Romance</div>
+			<div class="movie__runtime">143 min</div>
+		</div>
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">2 Guns</div>
+			<div class="movie__genre">Action, Comedy</div>
+			<div class="movie__runtime">109 min</div>
+		</div>
+
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">Wolverine</div>
+			<div class="movie__genre">Action, Adventure</div>
+			<div class="movie__runtime">126 min</div>
+		</div>
+
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">The Lone Ranger</div>
+			<div class="movie__genre">Action, Western</div>
+			<div class="movie__runtime">149 min</div>
+		</div>
+
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">World War Z</div>
+			<div class="movie__genre">Action, Horror</div>
+			<div class="movie__runtime">116 min</div>
+		</div>
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">The Spectacular Now</div>
+			<div class="movie__genre">Drama, Comedy</div>
+			<div class="movie__runtime">122 min</div>
+		</div>
+
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">Pacific Rim</div>
+			<div class="movie__genre">Action, Adventure</div>
+			<div class="movie__runtime">143 min</div>
+		</div>
+
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">The Great Gatsby</div>
+			<div class="movie__genre">Drama, Romance</div>
+			<div class="movie__runtime">143 min</div>
+		</div>
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">The Great Gatsby</div>
+			<div class="movie__genre">Drama, Romance</div>
+			<div class="movie__runtime">143 min</div>
+		</div>
+
+		<div class ="movie">
+			<img src="http://placekitten.com/120/175" class="movie__cover"/>
+			<div class="movie__title">The Great Gatsby</div>
+			<div class="movie__genre">Drama, Romance</div>
+			<div class="movie__runtime">143 min</div>
+		</div>
+	</div>
+
+	<div class="right">
+		<div class="user">
+			<img src="http://placehold.it/25X25" class="User_picture"/>
+			<div class="user__userName"> Jack Dorsey</div>
+			<div class="user__status"></div>
+		</div>
+
+		<div class = "chatContent">
+
+			<div class="sectionTitle">Online</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Victor Erixon</div>
+				<div clas="chat__movie">The Great Gatsby</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Gustav Butlex</div>
+				<div clas="chat__movie">Wolverine</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Malte Jansson</div>
+				<div clas="chat__movie">Smurfs</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> August Berglund</div>
+				<div clas="chat__movie">Californiacation</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Alicia Agneson</div>
+				<div clas="chat__movie">Swan Lake</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="sectionTitle">Offline</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Name</div>
+				<div clas="chat__movie">Jobs</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Name</div>
+				<div clas="chat__movie">The Great Gatsby</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Name</div>
+				<div clas="chat__movie">Pacific Rim</div>
+				<div class="chat__status"></div>
+			</div>
+
+			<div class="chat">
+				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<div class="chat__userName"> Name</div>
+				<div clas="chat__movie">Planes</div>
+				<div class="chat__status"></div>
+			</div>
+		</div>
+
+		<div class="chatSearch">
+			<form class="chatSearch__search">
+				<input type="text" name="chat-search" placeholder="Chat with...">
 			</form>
-	</div>
-
-	<div class = "navContent">
-
-		<div class="navContent__sectionTitle">Main</div>
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>Playing</div>
-		</div>
-
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>Discover</div>
-		</div>
-
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>Activity</div>
-		</div>
-
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>Top Charts</div>
-		</div>
-
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>New Releases</div>
-		</div>
-		
-
-		<div class="navContent__sectionTitle">Your Movie Circles</div>
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>This I Must See</div>
-		</div>
-
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>The Best</div>
-		</div>
-
-
-		<div class="navContent__sectionTitle">Collections</div>
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>Me and Bob</div>
-		</div>
-
-		<div class=navigation>
-			<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-			<div class= navigation__link>Travel Movies</div>
-		</div>
-
-	</div>
-
-
-
-<div class = "mainContent">
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">The Great Gatsby</div>
-		<div class="movie__genre">Drama, Romance</div>
-		<div class="movie__runtime">143 min</div>
-	</div>
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">2 Guns</div>
-		<div class="movie__genre">Action, Comedy</div>
-		<div class="movie__runtime">109 min</div>
-	</div>
-
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">Wolverine</div>
-		<div class="movie__genre">Action, Adventure</div>
-		<div class="movie__runtime">126 min</div>
-	</div>
-
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">The Lone Ranger</div>
-		<div class="movie__genre">Action, Western</div>
-		<div class="movie__runtime">149 min</div>
-	</div>
-
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">World War Z</div>
-		<div class="movie__genre">Action, Horror</div>
-		<div class="movie__runtime">116 min</div>
-	</div>
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">The Spectacular Now</div>
-		<div class="movie__genre">Drama, Comedy</div>
-		<div class="movie__runtime">122 min</div>
-	</div>
-
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">Pacific Rim</div>
-		<div class="movie__genre">Action, Adventure</div>
-		<div class="movie__runtime">143 min</div>
-	</div>
-
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">The Great Gatsby</div>
-		<div class="movie__genre">Drama, Romance</div>
-		<div class="movie__runtime">143 min</div>
-	</div>
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">The Great Gatsby</div>
-		<div class="movie__genre">Drama, Romance</div>
-		<div class="movie__runtime">143 min</div>
-	</div>
-
-	<div class ="movie">
-		<img src="http://placekitten.com/120/175" class="movie__cover"/>
-		<div class="movie__title">The Great Gatsby</div>
-		<div class="movie__genre">Drama, Romance</div>
-		<div class="movie__runtime">143 min</div>
-	</div>
-</div>
-
-	<div class = "chatContent">
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
-		</div>
-
-		<div class="chat">
-			<div class="chat__userName"> Name</div>
-			<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-			<div class="chat__status"></div>
 		</div>
 	</div>
-
 </body>
 </html>
 

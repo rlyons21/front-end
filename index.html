@@ -9,8 +9,9 @@
 <body class="main">
 	<div class="left">
 		<div class="movieSearch">
-				<form class="movieSearch__search">
-					<input type="image" src="search-icon.png" name="search" placeholder="Search Movies">
+				<form class="search">
+					<input type="text" placeholder="Search movies...">
+					<input class="searchIcon" type="image" src="search-icon.png" name="search">
 				</form>
 		</div>
 
@@ -18,19 +19,19 @@
 
 			<div class="sectionTitle">Main</div>
 			<ul class="navLinks">
-				 <li class=navigation>
+				 <li class="navigation">
 					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-					<div class= navigation__link>Playing</div>
+					<div class="navigation__link">Playing</div>
 				</li>
 
-				<li class=navigation>
+				<li class="navigation navigation--modified">
 					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-					<div class= navigation__link>Discover</div>
+					<div class="navigation__link">Discover</div>
 				</li>
 
-				<li class=navigation>
+				<li class="navigation">
 					<img src="http://placehold.it/20x20" class ="navigation__icon"/>
-					<div class= navigation__link>Activity</div>
+					<div class= "navigation__link">Activity</div>
 				</li>
 
 				<li class=navigation>
@@ -86,11 +87,12 @@
 			<div class="sortLinksContainer"> <ul class="sortLinks">
 				<li class="sortLinks__item">Release Date</li>
 				<li class="sortLinks__item"> | </li>
-				<li class="sortLinks__item">Popularity</li>
+				<li class="sortLinks__item sortLinks__item--modified">Popularity</li>
 			</ul></div>
 
 			<div class=icons>
-				<img src="refresh.png" class="refreshIcon"/>
+				<img src="refresh.png" class="icons__refreshIcon"/>
+				<img src="entericon.png" class="icons__enterIcon"/>
 			</div>
 
 		</div>
@@ -174,9 +176,9 @@
 
 	<div class="right">
 		<div class="user">
-			<img src="http://placehold.it/25X25" class="User_picture"/>
+			<img src="http://placehold.it/25X25" class="user__picture"/>
 			<div class="user__userName"> Jack Dorsey</div>
-			<div class="user__status"></div>
+			<div><img src="grey-circle.png" class="user__status"/></div>
 		</div>
 
 		<div class = "chatContent">
@@ -184,76 +186,79 @@
 			<div class="sectionTitle">Online</div>
 
 			<div class="chat">
-				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
+				<img src="http://placehold.it/25X25" class ="chat__userPicture"/>
 				<div class="chat__userName"> Victor Erixon</div>
-				<div clas="chat__movie">The Great Gatsby</div>
-				<div class="chat__status"></div>
+				<div class="chat__movie">The Great Gatsby</div>
+				<img src="green_dot.gif" class="chat__status">
 			</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
 				<div class="chat__userName"> Gustav Butlex</div>
-				<div clas="chat__movie">Wolverine</div>
-				<div class="chat__status"></div>
+				<div class="chat__movie">Wolverine</div>
+				<img src="yellow-dot.png" class="chat__status">
 			</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
 				<div class="chat__userName"> Malte Jansson</div>
-				<div clas="chat__movie">Smurfs</div>
-				<div class="chat__status"></div>
+				<div class="chat__movie">Smurfs</div>
+				<img src="yellow-dot.png" class="chat__status">
 			</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
 				<div class="chat__userName"> August Berglund</div>
-				<div clas="chat__movie">Californiacation</div>
-				<div class="chat__status"></div>
+				<div class="chat__movie">Californiacation</div>
+				<img src="green_dot.gif" class="chat__status">
 			</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
 				<div class="chat__userName"> Alicia Agneson</div>
-				<div clas="chat__movie">Swan Lake</div>
-				<div class="chat__status"></div>
+				<div class="chat__movie">Swan Lake</div>
+				<img src="red_dot.png" class="chat__status">
 			</div>
 
 			<div class="sectionTitle">Offline</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-				<div class="chat__userName"> Name</div>
-				<div clas="chat__movie">Jobs</div>
-				<div class="chat__status"></div>
+				<div class="chat__userName">Bill S Kenney</div>
+				<div class="chat__movie">Jobs</div>
+				<img src="grey-dot.png" class="chat__status">
 			</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-				<div class="chat__userName"> Name</div>
-				<div clas="chat__movie">The Great Gatsby</div>
-				<div class="chat__status"></div>
+				<div class="chat__userName">Charlie Waite</div>
+				<div class="chat__movie">The Great Gatsby</div>
+				<img src="grey-dot.png" class="chat__status">
 			</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-				<div class="chat__userName"> Name</div>
-				<div clas="chat__movie">Pacific Rim</div>
-				<div class="chat__status"></div>
+				<div class="chat__userName">Justin Pervorse</div>
+				<div class="chat__movie">Pacific Rim</div>
+				<img src="grey-dot.png" class="chat__status">
 			</div>
 
 			<div class="chat">
 				<img src="http://placehold.it/25x25" class ="chat__userPicture"/>
-				<div class="chat__userName"> Name</div>
-				<div clas="chat__movie">Planes</div>
-				<div class="chat__status"></div>
+				<div class="chat__userName">Trent Walton</div>
+				<div class="chat__movie">Planes</div>
+				<img src="grey-dot.png" class="chat__status">
 			</div>
 		</div>
+
 
 		<div class="chatSearch">
-			<form class="chatSearch__search">
-				<input type="text" name="chat-search" placeholder="Chat with...">
+			<form class="search">
+					<input type="text" placeholder="Chat with...">
+					<input class="searchIcon" type="image" src="search-icon.png" name="search">
 			</form>
 		</div>
+
 	</div>
 </body>
 </html>
